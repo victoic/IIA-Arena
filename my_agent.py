@@ -1,5 +1,5 @@
 from agents import *
-from pyknow import *
+from experta import *
 
 class MyAgent(Agent):
   def program(self, percept) -> str:
@@ -14,5 +14,8 @@ class MyAgent(Agent):
     As regras são criadas por meio do pacote pyknow, use o exemplo em
     https://github.com/konradbjk/Rule-Based-Engine-pyknow/blob/master/pyknow_intro.ipynb
     para se guiar.
+
+    Para testar, mude o time 'a' para sua classe no arquivo main.py
+    e execute o arquivo main.py.
     """
     pass
