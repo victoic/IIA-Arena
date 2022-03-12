@@ -2,7 +2,7 @@
 
 Nesse exercício nós devemos modelar uma base de regras para que pequenos pixels lutem até a morte.
 
-Basta modificar as classes em `my_agent.py` para projetar suas regras.
+Basta modificar as classes em `rule_base.py` para projetar suas regras.
 As regras são escritas utilizando o pacote [experta](https://github.com/nilp0inter/experta), para instalar rode o comando `pip install experta` no seu prompt de comando.
 
 Regras:
