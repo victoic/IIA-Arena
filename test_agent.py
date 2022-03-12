@@ -4,11 +4,18 @@ import random
 class RandomAgent(Agent):
   def program(self, percept) -> str:
     """
-    Classe para seu Agente. O programa receberá como percepção a arena inteira,
-    uma matriz com None onde não tem nada e um objeto de uma classe Agente onde há
-    Essa função deve retornar uma String com uma das seguintes ações:
-    - 'left', 'right', 'up', ou 'down' para se mover em uma direção
-    - 'attack' para atacar as quatro direções em torno do agente
+    Classe de agente que toma ações aleatoriamente. Para testes contra
+    sua implementação de Agente Inteligente.
+    Parâmetros:
+    - percept: ndArray, array do tamanho da arena com todas as informações
+    do mundo.
+    
+    Retorno:
+    - action: str, ação a ser tomada no próximo passo. Pode receber os
+    valores: 'left', 'right', 'up', ou 'down' para se mover em uma di-
+    reção ou 'attack' para atacar as quatro direções em torno do agen-
+    te.
     """
     actions = ['left', 'right', 'up', 'down', 'attack']
-    return random.choice(actions)
+    action = random.choice(actions)
+    return action
